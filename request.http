@@ -1,3 +1,4 @@
+
 GET http://localhost:3000/subscribers
 
 ###
@@ -6,6 +7,24 @@ POST http://localhost:3000/subscribers
 Content-Type: application/json
 
 {
-  "name": "Robert",
-  "subscribedChannel": "Bennetts Channel"
+  "name": "Cihat",
+  "subscribedChannel": "Cihat Channel"
+}
+
+###
+
+GET  http://localhost:3000/subscribers/6126acca46f4d19a43a7cdc7
+
+###
+
+DELETE  http://localhost:3000/subscribers/6126afbcfda1d4c2a1a29813
+
+###
+
+PATCH http://localhost:3000/subscribers/6126afbdfda1d4c2a1a29815
+Content-Type: application/json 
+
+{
+  "name": "Mahmut",
+  "subscribedChannel": "Mahmut'un Kanalı"
 }
